@@ -12,9 +12,7 @@ public class RootBehavior : MonoBehaviour
     public void SetFPS(int fps){
         int currentFPS = Application.targetFrameRate;
         if (currentFPS != fps){
-            Debug.Log("FPS setting to:" + fps);
             Application.targetFrameRate = fps;
-            QualitySettings.vSyncCount = 0;
         }
     }
 
